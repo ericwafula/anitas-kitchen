@@ -40,6 +40,16 @@
     padding-top: 30px;    
 }
 
-#banner-first{
+#banner-first, #breakfast, #lunch, #dinner{
     font-size: 42px;
+}
+
+#happy-hour{
+    color: #505050;
+    background-color: #E4E5E7;
+}
+
+#party-time{
+    color: white;
+    background-color: #f15b29;
 }
