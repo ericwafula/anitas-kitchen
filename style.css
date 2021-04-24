@@ -50,10 +50,13 @@
     height: 200px;
 }
 
+#banner-first{
+    text-align: center;
+}
+
 #happy-hour{
     color: #505050;
     background-color: #E4E5E7;
-    /* background-size: cover; */
     padding: 26px;
 }
 
@@ -80,4 +83,10 @@
     background-image: url(./Images/foodtop/dinner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#breakfast, #lunch, #dinner{
+    text-align: center;
+    padding: 70px;
+    color: white;
 }
