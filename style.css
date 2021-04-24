@@ -108,5 +108,11 @@
 
 #fast-food-text{
     padding-right: 190px;
-    margin-left: 70px;
+    padding-top: 20px;
+    color: #505050;
+}
+
+#fast-food-text > h1{
+    font-size: 45px;
+    color: #505050;
 }
