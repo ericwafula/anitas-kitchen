@@ -17,9 +17,12 @@
 }
 
 #menu-icon > img{
-    width: 50px;
+    width: 80px;
+    padding-top: 80px;
+    padding-left: 100px;
 }
 
 #logo{
     width: 300;
+    margin: -50px;
 }
