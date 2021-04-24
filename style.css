@@ -1,9 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .header{
-    /* position: absolute; */
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
@@ -14,22 +15,18 @@
 
 }
 
-.header-elements{
+.header-logo{
     display: flex;
     justify-content: center;
-    flex-direction: row;
     padding: 50px;
+    width: 300;
+    margin: -60px;
 }
 
 #menu-icon > img{
     width: 80px;
     padding-top: 80px;
     padding-left: 100px;
-}
-
-#logo{
-    width: 300;
-    margin: -60px;
 }
 
 #header-heading > p{
@@ -39,4 +36,10 @@
     padding-left: 400px;
     padding-right: 400px;
     margin-top: 45px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;    
 }
