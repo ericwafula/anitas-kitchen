@@ -37,19 +37,47 @@
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    padding-top: 30px;    
+    padding-top: 30px;
+    margin-top: -72px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 #banner-first, #breakfast, #lunch, #dinner{
     font-size: 42px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
 }
 
 #happy-hour{
     color: #505050;
     background-color: #E4E5E7;
+    /* background-size: cover; */
+    padding: 26px;
 }
 
 #party-time{
     color: white;
     background-color: #f15b29;
+    padding: 26px;
+    margin-top: -42px;
+}
+
+#breakfast{
+    background-image: url(./Images/foodtop/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lunch{
+    background-image: url(./Images/foodtop/lunch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dinner{
+    background-image: url(./Images/foodtop/dinner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
