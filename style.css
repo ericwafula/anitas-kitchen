@@ -90,3 +90,23 @@
     padding: 70px;
     color: white;
 }
+
+.fast-food{
+    margin-top: 65px;
+}
+
+#fast-food-images{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    float: left;
+    margin-left: 190px;
+    margin-right: 80px;
+    padding: 20px;
+    box-shadow: 0 0 5px #B6B6B6;
+}
+
+#fast-food-text{
+    padding-right: 190px;
+    margin-left: 70px;
+}
