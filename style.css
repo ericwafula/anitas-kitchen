@@ -387,3 +387,18 @@ input[type="button"]{
     padding-right: 50px;
     border-radius: 5px;
 }
+
+.footer-2{
+    margin-top: 8px;
+    background-color: #f15b29;
+    background-size: cover;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
