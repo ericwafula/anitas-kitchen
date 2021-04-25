@@ -396,9 +396,27 @@ input[type="button"]{
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -8px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#burger-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+}
+
+#burger-menu > img{
+    height: 45px;
+    padding-right: 14px;
+    margin-top: 30px;
+}
+
+#burger-menu > h1{
+    font-size: 44px;
+}
