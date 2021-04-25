@@ -199,6 +199,61 @@
     display: flex;
     justify-content: space-around;
     color: #505050;
-    background-color: #E3E3E3;
+    font-size: 13px;
+    background-color: white;
 }
 
+#slideshow-menu > h1:nth-child(2), #slideshow-menu > h1:nth-child(3), #slideshow-menu > h1:nth-child(4){
+    box-sizing: content-box;
+    border:solid #b6b6b6 1px;
+    background-color:#E3E3E3;
+    padding-left: 100px;
+    padding-right: 106px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#slideshow-menu > h1:first-child{
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #f15b29;
+}
+
+#slideshow-images{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+#slideshow-images > p:nth-child(1), #slideshow-images > p:nth-child(5){
+    color: #f15b29;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* This is for sizing the angle brackets */
+    transform: scale(1.5,4);
+    font-weight:bolder
+}
+
+
+#slideshow-text{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding-bottom: 60px;
+    font-weight: bold;
+    color: #f15b29;
+}
+
+#slideshow-text > p:nth-child(1){
+    padding-left: 47px;
+}
+
+#slideshow-text > p:nth-child(3){
+    padding-right: 47px;
+}
