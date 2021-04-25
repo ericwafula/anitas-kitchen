@@ -107,18 +107,21 @@
     box-shadow: 0 0 5px #B6B6B6;
 }
 
+
 #fast-food-text{
     padding-right: 190px;
     padding-top: 20px;
     color: #505050;
 }
 
-#fast-food-text > h1{
+
+
+#fast-food-text > h1, #drinks-text > h1{
     font-size: 45px;
     color: #505050;
 }
 
-#button{
+#button-food{
     color: #f15b29;
     font-size: 24px;
     box-sizing: content-box;
@@ -132,6 +135,44 @@
     padding-bottom: 10px;
 }
 
-#button > i{
+#button-food > i, #button-drinks > i{
     padding-left: 10px;
+}
+
+.drinks{
+    clear: both;
+    margin-top: 65px;
+}
+
+#drinks-images{
+    
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    float: right;
+    margin-left: 80px;
+    margin-right: 190px;
+    margin-bottom: 105px;
+    padding: 20px;
+    box-shadow: 0 0 5px #B6B6B6;
+}
+
+#drinks-text{
+    padding-left: 190px;
+    padding-top: 20px;
+    color: #505050;
+}
+
+#button-drinks{
+    color: #f15b29;
+    font-size: 24px;
+    box-sizing: content-box;
+    border: solid #f15b29 1px;
+    border-radius: 5px;
+    margin-left: 250px;
+    margin-right: 800px;
+    padding-left: 5px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
