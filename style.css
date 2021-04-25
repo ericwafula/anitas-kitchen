@@ -182,7 +182,10 @@
     background-image: url(./Images/backgrounds/foodsBg.jpg);
     margin-left: -8px;
     margin-right: -8px;
-    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -198,3 +201,4 @@
     color: #505050;
     background-color: #E3E3E3;
 }
+
