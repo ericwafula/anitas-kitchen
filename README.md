@@ -4,11 +4,9 @@
 ## Description
 This is a website showing the menu of the meals and drinks served in Anita's kitchen
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* cd/path-to-your-directory
+* git clone https://github.com/ericwafula/anitas-kitchen
+* git init code .
 ## Technologies Used
 HML and CSS
 ## Support and contact details
