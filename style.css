@@ -182,8 +182,17 @@
     background-image: url(./Images/backgrounds/foodsBg.jpg);
     margin-left: -8px;
     margin-right: -8px;
-    padding-bottom: 50px;
+    padding: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.slideshow-box{
+    background-color: white;
+}
+
+#slideshow-menu{
+    display: flex;
+    justify-content: space-around;
 }
