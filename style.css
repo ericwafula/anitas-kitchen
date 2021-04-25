@@ -102,6 +102,7 @@
     float: left;
     margin-left: 190px;
     margin-right: 80px;
+    margin-bottom: 80px;
     padding: 20px;
     box-shadow: 0 0 5px #B6B6B6;
 }
@@ -115,4 +116,21 @@
 #fast-food-text > h1{
     font-size: 45px;
     color: #505050;
+}
+
+#button{
+    color: #f15b29;
+    font-size: 24px;
+    box-sizing: content-box;
+    border: solid #f15b29 1px;
+    margin-left: 800px;
+    margin-right: 250px;
+    padding-left: 30px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#button > i{
+    padding-left: 10px;
 }
