@@ -279,3 +279,10 @@
     padding-bottom: 24px;
 }
 
+.customer-feedback > #customers > h3, .customer-feedback > #customers > p, .customer-feedback > #about-menu >p{
+    color:#505050;
+}
+
+.customer-feedback > #customers > h1, .customer-feedback > #about-menu > h1{
+    color: #f15b29;
+}
