@@ -102,7 +102,7 @@
     float: left;
     margin-left: 190px;
     margin-right: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
     padding: 20px;
     box-shadow: 0 0 5px #B6B6B6;
 }
@@ -123,6 +123,7 @@
     font-size: 24px;
     box-sizing: content-box;
     border: solid #f15b29 1px;
+    border-radius: 5px;
     margin-left: 800px;
     margin-right: 250px;
     padding-left: 30px;
