@@ -267,6 +267,8 @@ button > i{
 .slideshow-section{
     clear: both;
     background-image: url(./Images/backgrounds/foodsBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 200px;
