@@ -1,493 +1,399 @@
-/* Styles the header container and removes the white space around */
-.header{
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-    padding-bottom: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./Images/backgrounds/landing.jpg);
-    overflow: hidden;
-
+/* Removes any white/negative space seen between the viewport and the backgrounds */
+*{
+    margin: 0;
+    padding: 0;
 }
 
-/* Centers the logo */
-.header-logo{
+/* #################### Styles the header section ######################## */
+
+/* Styles the header */
+.header{
+    background-image: url(./Images/backgrounds/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+/* Aligns the menu icon to the top left */
+.menu{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+/* Styles the menu icon */ 
+.menu > img{
+    width: 80px; 
+}
+
+/* Centers the logo and adds bottom spacing */
+.logo{
     display: flex;
     justify-content: center;
-    padding: 50px;
-    width: 300;
-    margin: -60px;
+    align-items: center;   
+    padding-bottom: 45px;
 }
 
-/* Adjusts the menu hamburger icon*/
-#menu-icon > img{
-    width: 80px;
-    padding-top: 80px;
-    padding-left: 100px;
-}
-
-/* Styles the header heading paragraph */
-#header-heading > p{
-    color: white;
-    font-size: 65px;
+/* Styles the header's heading */
+.header-heading > p{
+    font-size: 60px;
     text-align: center;
-    padding-left: 400px;
-    padding-right: 400px;
-    margin-top: 45px;
+    color: white;
 }
 
-/* Aligns content in a row */
+/* Adds left and right space */
+.header-heading{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/* ############# BANNER ############ */
+/* Positions items from left to right */
 .banner{
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding-top: 30px;
-    margin-top: -72px;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-/* Styles the text */
-#banner-first, #breakfast, #lunch, #dinner{
-    font-size: 42px;
-    box-sizing: border-box;
-    width: 500px;
-    height: 200px;
-}
-
-/* centers the text */
-#banner-first{
+    justify-content: space-around;
+    align-items: center; 
+    padding-bottom: 40px;
+    font-size: 50px;
+    margin-top: -1px;
     text-align: center;
 }
 
-/* Changes the background color */
-#happy-hour{
-    color: #505050;
-    background-color: #E4E5E7;
-    padding: 26px;
-}
-
-/* Changes the background color */
-#party-time{
-    color: white;
-    background-color: #f15b29;
-    padding: 26px;
-    margin-top: -42px;
-}
-
-/* Breakfast image */
-#breakfast{
+/* Styles Breakfast */
+.banner > :nth-child(2){
+    font-style: italic;
     background-image: url(./Images/foodtop/breakfast.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Lunch image */
-#lunch{
-    background-image: url(./Images/foodtop/lunch.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Dinner image */
-#dinner{
-    background-image: url(./Images/foodtop/dinner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* centers the text */
-#breakfast, #lunch, #dinner{
-    text-align: center;
-    padding: 70px;
+    width: 25%;
+    height: 100%;
     color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-/* increases the fast food's top margin */
-.fast-food{
-    margin-top: 65px;
+/* Styles lunch */
+.banner > :nth-child(3){
+    background-image: url(./Images/foodtop/lunch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: italic;
+    width: 25%;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-/* Styles the fast food's images and adds a box shadow around */
-#fast-food-images{
+/* Styles Dinner */
+.banner > :nth-child(4){
+    background-image: url(./Images/foodtop/dinner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: italic;
+    width:25%;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Styles the Happy Hour/Party Time container */
+.inner-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+/* Styles Happy Hour */
+.inner-banner > :first-child{
+    padding-bottom: 30px;
+    color: #4e4e4e;
+    width: 100%;
+    text-align: center;
+    padding-top: 5.5%;
+    padding-bottom: 7%;
+}
+
+/* Styles Party Time */
+.inner-banner > :nth-child(2){
+    background-color: #f15b29;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+/* #################### Styles the middle section ########################################
+
+/* ############# FAST FOOD ############ */
+/* Aligns the cake images in the banner in block format*/
+#cake-container{
+    float: left;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    float: left;
-    margin-left: 190px;
-    margin-right: 80px;
-    margin-bottom: 105px;
-    padding: 20px;
-    box-shadow: 0 0 5px #B6B6B6;
+    box-shadow: 0px 0px 3px #888888;
+    padding: 15px;
+    margin-right: 60px;
 }
 
-/* Styles the fast foos text */
-#fast-food-text{
-    padding-right: 190px;
-    padding-top: 20px;
-    color: #505050;
+/* Adds some negative space around the fast foods container */
+.fast-food-container{
+    padding-top: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 60px;
 }
 
-/* Styles the  fast foods headings */
-#fast-food-text > h1, #drinks-text > h1{
-    font-size: 45px;
-    color: #505050;
+/* Changes the font color and font family in the fast foods container */
+.fast-food > :nth-child(2), .fast-food > :nth-child(3), .fast-food > :nth-child(4){
+    color: #4e4e4e;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Styles the button */
-#button-food{
-    color: #f15b29;
+/* increases negative space between the text, the images and the right side of the fast food container */
+.fast-food{
+    padding-left:60px;
+    padding-right: 60px;
+}
+
+/* Styles the fast foods heading */
+.fast-food > :first-child{
+    margin-top: 15px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #4e4e4e;
+}
+
+/* Styles the fast foods subheading */
+.fast-food > :nth-child(2){
     font-size: 24px;
-    box-sizing: content-box;
-    border: solid #f15b29 1px;
+    margin-bottom: 30px;
+}
+
+/* Styles the Fast foods and Drinks buttons */
+.fast-food > a > button{
+    border-color: #f15b29;
+    background-color: white;
+    border-style: solid;
+    font-size: 24px;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
-    margin-left: 800px;
-    margin-right: 250px;
-    padding-left: 30px;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    color: #f15b29;
 }
 
-/* Syles the buttons icons */
-#button-food > i, #button-drinks > i{
-    padding-left: 10px;
+/* Adds spacing between the last paragraphs and the button */
+.fast-food > :nth-child(4), .drinks > :nth-child(4){
+    padding-bottom: 20px;
 }
 
-/* Clears the float */
-.drinks{
-    clear: both;
-    margin-top: 65px;
+/* Adjusts the button icon */
+button > i{
+    padding-left: 15px;
 }
 
-/* Styles the drinks images section */
-#drinks-images{    
+/* ############# DRINKS ############ */
+/* Aligns the drinks images in the banner in inline format*/
+#drinks-images-container{
+    float: right;
     display: flex;
     flex-direction: row;
-    width: fit-content;
-    float: right;
-    margin-left: 80px;
-    margin-right: 190px;
-    margin-bottom: 105px;
-    padding: 20px;
-    box-shadow: 0 0 5px #B6B6B6;
+    box-shadow: 0px 0px 3px #888888;
+    padding: 15px;
+    margin-right: 60px;
 }
 
-/* Styles the text */
-#drinks-text{
-    padding-left: 190px;
-    padding-top: 20px;
-    color: #505050;
+/* Adds some negative space around the drinks container */
+.drinks-container{
+    padding-top: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 60px;
+}
+
+/* Changes the font color and font family in the drinks container */
+.drinks > :nth-child(2), .drinks > :nth-child(3), .drinks > :nth-child(4){
+    color: #4e4e4e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+/* increases negative space between the text, the images and the right side and the bottom of the drinks container */
+.drinks{
+    padding-left:60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+
+}
+
+/* Styles the drinks heading */
+.drinks > :first-child{
+    margin-top: 15px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #4e4e4e;
+    text-align: right;
+}
+
+/* Styles the drinks subheading */
+.drinks > :nth-child(2){
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 /* Styles the button */
-#button-drinks{
-    color: #f15b29;
+.drinks > a > button{
+    border-color: #f15b29;
+    background-color: white;
+    border-style: solid;
     font-size: 24px;
-    box-sizing: content-box;
-    border: solid #f15b29 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 55%;
     border-radius: 5px;
-    margin-left: 250px;
-    margin-right: 800px;
-    padding-left: 5px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    color: #f15b29;
+    margin-left: 45%; 
 }
 
-/* Adds background */
-.slideshow-container{
+/* ####### SLIDESHOW SECTION ######### */
+.slideshow-section{
     clear: both;
     background-image: url(./Images/backgrounds/foodsBg.jpg);
-
-    /* Removes white spacing */
-    margin-left: -8px;
-    margin-right: -8px;
-    padding-left: 200px;
-    padding-right: 200px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
-/* Styles the background */
-.slideshow-box{
+/* Slideshow container */
+.slideshow-container{
     background-color: white;
 }
 
-/* Alligns content in columns */
-#slideshow-menu{
+/* Nav Menu */
+.slideshow-container > nav > ul{
     display: flex;
     justify-content: space-around;
-    color: #505050;
-    font-size: 13px;
-    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #E3E3E3;
+    font-size: 28px;
+    color: #595959;
+    font-weight: bold;
 }
 
-/* Styles all the headings in the slideshow menu */
-#slideshow-menu > h1:nth-child(2), #slideshow-menu > h1:nth-child(3), #slideshow-menu > h1:nth-child(4){
-    box-sizing: content-box;
-    border:solid #b6b6b6 1px;
-    background-color:#E3E3E3;
-    padding-left: 100px;
-    padding-right: 106px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+/* Adds width, border left and bottom to the second and third slider nav menu options*/
+.slideshow-container > nav > ul > :nth-child(2), .slideshow-container > nav > ul > :nth-child(3), .slideshow-container > nav > ul > :nth-child(4){
+    border-left: solid #D4D4D4 1px;
+    border-bottom: solid #D4D4D4 1px;
+    width: 25%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-/* Selects the first element */
-#slideshow-menu > h1:first-child{
-    padding-left: 80px;
-    padding-right: 80px;
+/* Styles the first menu option */
+.slideshow-container > nav > ul > :first-child{
+    width: 25%;
+    text-align: center;
     color: #f15b29;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-/* Allows content to ba aligned in columns */
-#slideshow-images{
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
+/* Slide show */
+.slideshow{
     padding-top: 60px;
-    padding-bottom: 10px;
-}
-
-/* Styles the content in the slidwshow-images */
-#slideshow-images > p:nth-child(1), #slideshow-images > p:nth-child(5){
-    color: #f15b29;
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    /* This is for sizing the angle brackets */
-    transform: scale(1.5,4);
-    font-weight:bolder
-}
-
-/* Allows content to be aligned in column */
-#slideshow-text{
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Left arrow */
+.slideshow > :first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f15b29;
+    font-size: 50px;
+}
+
+/* Chicken Burger */
+.slideshow > :nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Chicken Burger, Beef Burger and Chicken Pizza text */
+.slideshow > :nth-child(2) > p, .slideshow > :nth-child(3) > p, .slideshow > :nth-child(4) > p{
     font-weight: bold;
     color: #f15b29;
-}
-
-/* Selects the first paragraph */
-#slideshow-text > p:nth-child(1){
-    padding-left: 47px;
-}
-
-/* Selects the third element which is a paragraph */
-#slideshow-text > p:nth-child(3){
-    padding-right: 47px;
-}
-
-/* Styles the .customer-feedback-section */
-.customer-feedback-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-/* Alows content to be in a column */
-.customer-feedback{
-    display:flex;
-    justify-content: space-around;
-    box-shadow: 0px 0px 5px #b6b6b6;
-    padding-left: 60px;
-    padding-right: 60px;
     text-align: center;
-    padding-bottom: 24px;
+    margin-top: 15px;
 }
 
-/* styles the customer-feedback-section h3 and paragraphs */
-.customer-feedback > #customers > h3, .customer-feedback > #customers > p, .customer-feedback > #about-menu >p{
-    color:#505050;
+/* Chicken burger image */
+.slideshow > :nth-child(2) > img{
+    width: 280px;
+    height: 220px;
 }
 
-/* Styles the customer-feedback-section container headings */
-.customer-feedback > #customers > h1, .customer-feedback > #about-menu > h1{
-    color: #f15b29;
-}
-
-/* Styles id customers */
-#customers{
-    padding-right: 48px;
-    margin-top: 20px;
-}
-
-/* Style's the about menu id */
-#about-menu{
-    width: 400px;
-    padding-left: 42px;
-    border-left: solid 3px #E3E3E3;
-    padding-left: 24px;
-    margin-top: 20px;
-}
-
-/* Increases the font-size in the paragaraphs located in id customers */
-#customers > p{
-    font-size: 18px;
-}
-
-/* Styles the About Menu text */
-#about-menu > p{
-    font-size: 18px;
-}
-
-/* Aligns the profile icons in a column */
-#profile-pictures{
-    display: flex;
-    justify-content:center;
-}
-
-/* Increases spacing between profile icons */
-#profile-pictures > p:first-child, #profile-pictures > img:nth-child(2), #profile-pictures > img:nth-child(3), #profile-pictures > img:nth-child(4){
-    padding-right: 20px;
-}
-
-#profile-pictures > img:nth-child(2), #profile-pictures > img:nth-child(4){
-    height: 52px;
-}
-
-/* This is for styling the angle brackets */
-#profile-pictures > p:first-child, #profile-pictures > p:last-child{
-    color: #f15b29;
-    margin-top: 22px;
-
-    /* This is for sizing the angle brackets */
-    transform: scale(1.5,4);
-    font-weight:bolder
-}
-
-/* Footer newsletter styling */
-.footer-1{
-    background-image:url(./Images/backgrounds/subscribe.jpg);
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: -8px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-/* Allows newsletter to be placed in the center */
-.newsletter{
+/* Right arrow */
+.slideshow > :last-child{
     display: flex;
     flex-direction: column;
-    justify-content:center;
     align-items: center;
-    box-sizing: border-box;
-}
-
-/* Changes the heading color to white */
-.newsletter > h1{
-    color: white;
-    font-size: 32px;
-}
-
-/* increases input size */
-input{
-    font-size: 20px;
-}
-
-/* Adjusts the width, height and color of the text input */
-input[type="text"]{
-    background: rgba(255, 255, 255, .2);
-    color: white;
-    border: none;
-    width: 300px;
-    height: 50px;
-    padding-right: 110px;
-    padding-left: 20px;
-    border-radius: 5px;
-
-}
-
-/* Adjusts the width, height and color of the button */
-input[type="button"]{
-    color: white;
-    background-color: #f15b29;
-    height: 50px;
-    margin-left: 20px;
-    border: none;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 5px;
-}
-
-/* Second part of the footer */
-
-.footer-2{
-    margin-top: 8px;
-    background-color: #f15b29;
-    background-size: cover;
-    overflow: hidden;
-    
-    /* Removes white spacing around the container*/
-    margin-left: -8px; 
-    margin-right: -8px;
-    margin-bottom: -8px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-    /* Aligns content in the center */
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    color: #f15b29;
+    font-size: 50px;
 }
 
-/* Styles the burger icon and MENU text */
-#burger-menu{
+/* ###### CUSTOMER TESTIMONIAL SECTION ####### */
+
+/* Section */
+.customer-testimonial-section{
+    padding-top: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 30px;
+}
+
+/* Inner Container */
+.inner-container{
+    box-shadow: 0 0 3px #595959;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    color: white;
-    margin-bottom: -12px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
 
-/* Styles the burger icon */
-#burger-menu > img{
-    height: 45px;
-    padding-right: 14px;
-    margin-top: 30px;
+/* About Menu */
+.about-menu{
+    
 }
 
-/* Increases the MENU title size */
-#burger-menu > h1{
-    font-size: 44px;
+.our-happy-customers{
+    width: 70%;
 }
 
-/* Styles the Footer-2's second child */
-.footer-container > p:nth-child(2){
-    color: white;
-    text-align: center;
-    font-size: 23px;
-    margin-top: 0;
-}
-
-/* Aligns the icons in a row */
-#icons{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-/* Styles the text at the bottom*/
-.footer-container > p:nth-child(4){
-    color: white;
-    text-align: center;
-    margin-top: 50px;
+.about-menu{
+    width: 30%;
 }
