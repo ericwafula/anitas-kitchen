@@ -461,7 +461,7 @@ button > i{
 }
 
 #email{
-    width: 350px;
+    width: 330px;
     height: 50px;
     outline: none;
     border: none;
@@ -473,7 +473,7 @@ button > i{
 }
 
 #button{
-    width: 230px;
+    width: 210px;
     height: 50px;
     background-color: #f15b29;
     border: none;
@@ -481,4 +481,39 @@ button > i{
     font-size: 18px;
     border-radius: 3px;
     font-weight: bold;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: #f15b29;
+}
+
+.ham-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.links h2{
+    margin-top: 20px;
+    color: white;
+}
+
+.social-links{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.links p{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: white;
 }
