@@ -388,14 +388,38 @@ button > i{
 }
 
 /* About Menu */
-.about-menu{
+.about-menu > h1, .our-happy-customers > h1{
+    color: #F15B29;
+    font-weight: bold;
     
 }
 
+.about-menu > p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.our-happy-customers > h3{
+    margin-top: 10px;
+}
+
+.our-happy-customers > p{
+    margin-top: 10px;
+}
+
+
+
 .our-happy-customers{
-    width: 70%;
+    width: 60%;
+    border-right: solid #F1F1F1 2px;
+    text-align: center;
+    padding: 0 20px
 }
 
 .about-menu{
     width: 30%;
+}
+
+.clients{
+    margin-top: 30px;
 }
