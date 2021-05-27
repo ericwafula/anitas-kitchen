@@ -369,10 +369,10 @@ button > i{
 
 /* Section */
 .customer-testimonial-section{
-    padding-top: 30px;
+    padding-top: 100px;
     padding-right: 200px;
     padding-left: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 /* Inner Container */
@@ -405,13 +405,15 @@ button > i{
 
 .our-happy-customers > p{
     margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
 }
 
 
 
 .our-happy-customers{
     width: 60%;
-    border-right: solid #F1F1F1 2px;
+    border-right: solid #F1F1F1 3px;
     text-align: center;
     padding: 0 20px
 }
@@ -422,4 +424,13 @@ button > i{
 
 .clients{
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.clients > :first-child, .clients > :last-child{
+    color: #f15b29;
+    font-size: 40px;
 }
